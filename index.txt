@@ -1,0 +1,611 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Hlulani 's Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="color/default.css" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<style>
+		.home-post {
+	background:#fff;
+	max-height: 600px;
+    margin-bottom: 30px;
+    overflow: hidden;
+	padding-bottom: 50px;	
+}
+.read-more {
+	background-color: #00aced;
+	padding: 6px;
+	bottom: 0;
+	display: inline-block;
+	color: #FFF;
+	position: absolute;
+	margin:16px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+	</style>
+
+	<script>
+		$(document).ready(function(){
+			$(".home-post").append('<div class="read-more">Read More</div>');
+			
+			$(document).on("click", ".read-more", function(){
+				$(this).parent(".home-post").css("max-height", "none");
+			});
+		});
+		
+	</script>
+</head>
+
+<body>
+	amazon
+	<!-- navbar -->
+	<div class="navbar-wrapper">
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<!-- Responsive navbar -->
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+				</a>
+					<h1 class="brand"><a href="index.html">HLULANI</a></h1>
+					<!-- navigation -->
+					<nav class="pull-right nav-collapse collapse">
+						<ul id="menu-main" class="nav">
+							<li><a title="team" href="#about">About</a></li>
+							<li><a title="services" href="#services">Services</a></li>
+							<li><a title="works" href="#works">Projects</a></li>
+							<li><a title="blog" href="#blog">Blog</a></li>
+							<li><a title="contact" href="#contact">Contact</a></li>
+							<!--<li><a href="page.html">Travel</a></li>-->
+
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Header area -->
+	<div id="header-wrapper" class="header-slider" style="position:relative">
+				<span style="background-color:rgba(0,0,0,.4); position:absolute; top:0;bottom:0;left:0;right:0;z-index:1"></span>
+		<header class="clearfix">
+			<div class="logo">
+				<img src="img/logo-1.png" alt="" />
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<div id="main-flexslider" class="flexslider">
+							<ul class="slides">
+								<li>
+									<p class="home-slide-content">
+										<strong>Love</strong> my community
+									</p>
+								</li>
+								<li>
+									<p class="home-slide-content">
+										Eat and drink <strong>Code</strong>
+									</p>
+								</li>
+								<li>
+									<p class="home-slide-content">
+										Get <strong>Inspired</strong>
+									</p>
+								</li>
+							</ul>
+						</div>
+						<!-- end slider -->
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+	<!-- spacer section -->
+	<section class="spacer green">
+		<div class="container">
+			<div class="row">
+				<div class="span6 alignright flyLeft">
+					<blockquote class="large">
+						When a person really desires something, all the universe conspires to help that person to realize his dream.<cite>Paulo Coelho</cite>
+					</blockquote>
+				</div>
+				<div class="span6 aligncenter flyRight">
+					<i class="icon-coffee icon-10x"></i>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end spacer section -->
+	<!-- section: team -->
+	<section id="about" class="section">
+		<div class="container">
+			<h4>Who I am</h4>
+			<div class="row">
+				<div class="span4 offset1">
+					<div>
+						<h2>I live with <strong>Tomorrow 's picture</strong></h2>
+						<p>
+							I’m am Hlulani Baloyi, 25 years old born in Limpopo. I work as a Digital Specialist at a consulting firm In my final year
+							I joined Geekulcha, where I got to work with web and mobile application, in the process I developed my love for mobile
+							applications, specifically android Geekulcha introduced me to attending more Tech events which in the process I got
+							to realize that there is a serious gap between males and females in the industry. I realized that girls/women are
+							sitting back which made me want to do something about this. So I started searching more of sites that speaks empowerment
+							for women in the ICT sector, in the process I ran into Girl Rising site amongst other many sites, they encourage Girls
+							education in general so I applied to be an ambassador for SA, which they appointed me. Girl Rising partners with Intel
+							so when Intel found out about my appointment they got me to work closely with them with a focus on introducing girls
+							to the ICT sector, where I get to run tutoring sessions as an intro to coding I also co-run meetups with girls who
+							are already in the ICT sector (We call ourselves Raeketsetsa which means Doing it for ourselves) so we can build and
+							share information as we build our portfolios in the industry, Under the Girl Rising umbrella, I also get to host career
+							expos for high school students. Girl Rising Career Expo is an outreach program targeted at young people (High schools
+							learners and the unemployed) from disadvantaged backgrounds found in South Africa’s townships. The program seeks to
+							open opportunities for young people currently unemployed and those feeling uninspired in their educational pursuits.
+							In reaching out to these youth, the outreach effort borrows from the African culture of storytelling while sharing
+							information. The project envisages a central point where current industry leaders can share the stories of their journeys
+							to success with the youth. Through this process it is hoped we can achieve a shift in mindset so these young people
+							can realize their current circumstances are just a temporary situation they can change through choice. As history
+							has clearly shown, teaching a person to fish without giving them a fishing rod aids them in no way. The Girl Rising
+							Career Expos are usually held in Atteridgeville, Pretoria I got to be featured in a number of articles including Htxt.women,
+							Tech Girl, Sunday Times, Intel IQ site, Digify Africa and Rekord amongst others. My major achievement was to score
+							a job at IBM after being headhunted.
+
+					</div>
+				</div>
+				<div class="span6">
+					<div class="aligncenter">
+						<img src="img/icons/hlulani.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+	</section>
+	<!-- end section: team -->
+	<!-- section: services -->
+	<section id="services" class="section orange">
+		<div class="container">
+			<h4>Services</h4>
+			<!-- Four columns -->
+			<div class="row">
+				<div class="span3 animated-fast flyIn">
+					<div class="service-box">
+						<img src="img/icons/laptop.png" alt="" />
+						<h2>Mobile development</h2>
+						<p>App development for<br>
+							<p>- Native android<br>
+								<p>- Hybrid android<br>
+									<p>- Hybrid IOS<br>
+
+					</div>
+				</div>
+				<div class="span3 animated flyIn">
+					<div class="service-box">
+						<img src="img/icons/lab.png" alt="" />
+						<h2>Web development</h2>
+						<p>- I also do Web development<br>
+							<p>- Responsive web apps<br>
+								<p>- Contact for more info<br>
+					</div>
+				</div>
+				<div class="span3 animated-fast flyIn">
+					<div class="service-box">
+						<img src="img/icons/lab.png" alt="" />
+						<h2>Career Expo events</h2>
+						<p>
+							- Career exposure for high scholars
+						</p>
+
+					</div>
+				</div>
+				<div class="span3 animated-slow flyIn">
+					<div class="service-box">
+						<img src="img/icons/lab.png" alt="" />
+						<h2>Motivational speaking</h2>
+						<p>
+							I also provide Motivational speaking
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end section: services -->
+	<!-- section: works -->
+	<section id="works" class="section">
+		<div class="container clearfix">
+			
+
+			<div class="toggle toggle-grey">
+
+				<!--<h4 class="trigger active"><span class="t_ico"></span><a href="#">ACHIEVEMENTS</a></h4>-->
+				<h4>Achievements</h4>
+				<div class="toggle_container" style="display: block;">
+					Below are some of Hlulani 's big achievements:
+					<p></p>
+					<p>– In 2014, <strong> She </strong> Became a Girl Rising ambassodor<br>
+						<p>– In 2014, <strong> Intel </strong> featured her on their "IQ by Intel site" under the She will connect category, which
+							can be found on youtube<br> – She got featured <strong> several times </strong>on the Htxt site<br> – In 2014 <strong> Techgirl.com </strong>featured
+							her as one of the inspirational tech girls</p>
+						<p>– She was also featured <strong> by Sowetan </strong>.<br>
+							<p>– In 2016 was featured<strong> on Digify Africa site </strong>.<br> – In 2015, Girls Invent tomorrow <strong> profiled her on their site </strong>.<br>								– In 2016 <strong>Rekord Newspaper </strong> featured her as an ICT boffin inspiring young people<br> – In 2016,
+								she was ranked as <strong> part of the 60 women changing the narrative inthe tech space</strong> in an annual awards
+								and ranking scheme for young South African Achievers between 15-40 years.<br> – In 2017, she was hosted and later
+								featured <strong> StartupGrind Pretoria </strong>
+
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<!-- spacer section -->
+	<section class="spacer bg3">
+		<div class="container">
+			<div class="row">
+				<div class="span12 aligncenter flyLeft">
+					<blockquote class="large">
+						If your mind is in it, you can acheive it.
+					</blockquote>
+				</div>
+				<div class="span12 aligncenter flyRight">
+					<i class="icon-rocket icon-10x"></i>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end spacer section -->
+	<!-- section: blog -->
+	<section id="blog" class="section">
+		<div class="container">
+			<h4>My Blog</h4>
+
+			<div class="span3">
+				<div class="home-post">
+					<p><img data-attachment-id="484" data-permalink="https://hlullyr.wordpress.com/2017/12/24/the-vicfalls-dream/unadjustednonraw_thumb_1a9b/"
+						    data-orig-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a9b-e1514107005386.jpg?w=740" data-orig-size="1024,586"
+						    data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}"
+						    data-image-title="UNADJUSTEDNONRAW_thumb_1a9b" data-image-description="" data-medium-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a9b-e1514107005386.jpg?w=740?w=300"
+						    data-large-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a9b-e1514107005386.jpg?w=740?w=740"
+						    class="alignnone size-full wp-image-484" src="./The VicFalls Dream – Hlulani_files/unadjustednonraw_thumb_1a9b-e1514107005386.jpg"
+						    alt="UNADJUSTEDNONRAW_thumb_1a9b" srcset="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a9b-e1514107005386.jpg?w=740 740w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a9b-e1514107005386.jpg?w=150 150w, https://hlullyr.files.wordpress.com/2017/12/
+unadjustednonraw_thumb_1a9b-e1514107005386.jpg?w=300 300w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a9b-e1514107005386.jpg?w=768 768w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a9b-e1514107005386.jpg 1024w"
+						    sizes="(max-width: 740px) 100vw, 740px"></p>
+					<div class="post-meta">
+						<i class="icon-file icon-2x"></i>
+						<span class="posted-on"><time class="entry-date published" datetime="2017-12-24T09:22:33+00:00"></time><time class="updated"
+							 datetime="2017-12-24T09:28:52+00:00">December 24, 2017</time></span>
+						<span class="tags"><a href="#">Travel</a>, <a href="#">blog</a></span>
+					</div>
+					<article id="post-481" class="post-481 post type-post status-publish format-standard hentry category-uncategorized has-post-thumbnail">
+						<header class="entry-header">
+							<div class="entry-meta">
+								<div class="entry-content">
+									<h5><strong><a href="#">The VicFalls Dream</a></strong></h5>
+									<p><strong>Day 4:</strong></p>
+									<div>It’s the little things that make holidays exciting, things like not pressured by time, it’s another day in VicFalls
+										and I have only three things to do for the day: eat, finish my novel that I couldn’t finish the previous night
+										and go for the Falls tour. I woke up and stayed in bed and continued reading and only completed my read around&nbsp;
+										<span
+										    class="aBn"><span class="aQJ">12:00pm</span></span>, I have skipped breakfast again and it comes to my attention that I actually
+											haven’t had coffee for like almost a week now and I haven’t really felt the need for one, which kind of makes
+											me giggle because the Hlulani I know would be going for the third or even fourth cup of coffee, let’s just say
+											coffee got a hold of me, a virus I always begged not to be rescued from, but hey I was really happy about where
+											I was.</div>
+									<div></div>
+									<div></div>
+									<div>While still reading the book I remembered Gilmore, if you read the earliest blogs you will remember the guy I met
+										in the taxi, I remembered he had promised to send his sister ‘s numbers, which he sent as soon as I reached out
+										to him. I texted her and she indicated she was still at work but would reach out to me as soon as she knocks off.
+										You could feel the warmth of the text and I was looking forward to seeing her later.</div>
+									<div></div>
+									<div></div>
+									<div>As soon as I finished the novel and preparing myself, off I went and my day appeared to be following the routine
+										from the day before, my first meal from almost the same time as yesterday and then the tour. When I got the VicFalls
+										entrance, I was welcomed by the songs which sounded really familiar, the guys were dressed in what looked like
+										Zulu traditional attires, and they were singing something along the lines of amalobola, they were really entertaining
+										to watch, and I think think they could read my heart, since they were quick to invite me on stage to join in, which
+										I was not even hesitant to do, “You really have nothing to lose” I said to myself. I “danced” with them for some
+										time and proceeded to make my payments so I could do the tour.</div>
+									<div></div>
+									<div></div>
+									<div>As I walked inside, there were guys offering to do photography for the tourist making their way to the tour, I personally
+										had a camera and two phones which I made them aware, but one of the guys requested he walks with me still, and
+										I agreed to it, and eventually I thanked myself for my decision because eventually this guy Lelato is his name
+										became a very great tour guide and a stellar photographer, what more do you want out of life really. I was to have
+										a very memorable tour where I wouldn’t miss a thing and there I was having a look at God moment, we spoke about
+										the Falls and just how super excited I was to be watching them, I kept saying “How do you not believe after seeing
+										all this” and Lelato, on the other hand, wouldn’t miss any of my happy moments, typical of a photographer, he captured
+										everything as it happened, and even suggested poses he thought we cool.</div>
+									<div></div>
+									<div></div>
+									<div><img data-attachment-id="483" data-permalink="https://hlullyr.wordpress.com/2017/12/24/the-vicfalls-dream/unadjustednonraw_thumb_1aac/"
+										    data-orig-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1aac.jpg?w=740" data-orig-size="1024,768"
+										    data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}"
+										    data-image-title="UNADJUSTEDNONRAW_thumb_1aac" data-image-description="" data-medium-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1aac.jpg?w=740?w=300"
+										    data-large-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1aac.jpg?w=740?w=740" class="alignnone size-full wp-image-483"
+										    src="./The VicFalls Dream – Hlulani_files/unadjustednonraw_thumb_1aac.jpg" alt="UNADJUSTEDNONRAW_thumb_1aac" srcset="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1aac.jpg?w=740 740w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1aac.jpg?w=150 150w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1aac.jpg?w=300 300w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1aac.jpg?w=768 768w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1aac.jpg 1024w"
+										    sizes="(max-width: 740px) 100vw, 740px"></div>
+									<div></div>
+									<div></div>
+									<div>The tour around VicFalls is very long but also worth it, I was not about to complain at all, as some of the water
+										would drizzle our way, I kept thinking of how I could live like that my whole life and life would be a pure bliss.
+										We went on each entry point and captured most angles of the Falls as we watched them, and in most parts, I’d just
+										pause and be stuck in that very moment, I was in love, in love with myself, I loved and appreciated God even more.</div>
+									<div></div>
+									<div></div>
+									<div>When we walked out it was almost&nbsp;<span class="aBn"><span class="aQJ">17:00</span></span>, which I suggested
+										we would have early dinner which included Lelato in it, I needed to appreciate him for being great company to a
+										stranger he doesn’t even know, I couldn’t help but think he’s one of the assignees that God is magically placing
+										all over, just to ensure that I have a trip to remember and I’ll be reminded of His unfailing love. Well before
+										we could get to the dinner, Sheenah reached out asking for where I was(bummer), we hadn’t agreed on timelines we
+										would meet with Sheenah and she was ready to meet up, luckily I had set the expectation for him that I’d need to
+										meet up with someone, even though we wouldn’t have our dinner together he wouldn’t regard me as rude. the second
+										option as far as Lelato was concerned was that we get takeaways, which I did for him and since I hadn’t decided
+										what I needed to have then I passed. Sheenah had indicated she would get to where I was staying&nbsp;<span class="aBn"><span class="aQJ">within 15 minutes</span></span>&nbsp;so
+										as soon as we bought the takeaways I rushed straight there.</div>
+									<div></div>
+									<div></div>
+									<div><img data-attachment-id="485" data-permalink="https://hlullyr.wordpress.com/2017/12/24/the-vicfalls-dream/unadjustednonraw_thumb_1a7b/"
+										    data-orig-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a7b.jpg?w=740" data-orig-size="1024,768"
+										    data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}"
+										    data-image-title="UNADJUSTEDNONRAW_thumb_1a7b" data-image-description="" data-medium-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a7b.jpg?w=740?w=300"
+										    data-large-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a7b.jpg?w=740?w=740" class="alignnone size-full wp-image-485"
+										    src="./The VicFalls Dream – Hlulani_files/unadjustednonraw_thumb_1a7b.jpg" alt="UNADJUSTEDNONRAW_thumb_1a7b" srcset="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a7b.jpg?w=740 740w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a7b.jpg?w=150 150w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a7b.jpg?w=300 300w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a7b.jpg?w=768 768w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a7b.jpg 1024w"
+										    sizes="(max-width: 740px) 100vw, 740px"></div>
+									<div></div>
+									<p>&nbsp;</p>
+									<div>My idea of meeting up with Sheenah was sitting and chatting over drinks and dinner maybe, but she had an even greater
+										idea, she suggested to drive me around and show me few places she was so sure I’d fall in love with, we drove to
+										the restaurant called Zambezi house which in it has awesome architectures that are even Africa inspired colors
+										and designs, we moved around and our next stop was another cool hotel/resort called Elephant Hills resort, we got
+										there, checked out the place and moved to the next hotel which I forgot the name, this was where we were to have
+										our dinner, well all I can say is Sheenah was such a host. When we drove into the hotel, I was made aware that
+										the President of Zimbabwe, President Mnangangwa was there, my face lit with the thought that I could possibly meet
+										him (Well it’s good to dream). The cars they were using were actually parked on our way to the reception that I
+										even took a picture of a car, even though it was at night.</div>
+									<div></div>
+									<div></div>
+									<div>When we had found our place to sit while we ordered our food, we were actually even treated to African dances, they
+										referred to themselves as “Ma Africa amahle” and they showcased from Zulu, Tswana and Sotho dances, which was really
+										refreshing to watch, never in my wildest dreams had I thought my day would end up the way it did. As soon as the
+										food arrived we continued dining and sharing our stories, you’d swear Sheenah and I had known each other for decades,
+										I was happy, I’d now met my newly found big sister with a heart of Gold.</div>
+									<div></div>
+									<div></div>
+									<div>Our final place to go was Victoria Falls hotel which in it had the design I’d compare with sun city kind. Then they
+										drove me back home and we said our goodbyes and was happy to have met, it was a day to remember, fond memories
+										were created. I was to have an early night since I’d need to wake up early to Travel to Zambia.</div>
+									<div></div>
+									<div></div>
+									<div>Let’s meet on day 5</div>
+									<div></div>
+									<div>“ If your mind is in it, you can achieve it” Hlulani</div>
+					</article>
+					</div>
+					</div>
+					<div class="span3">
+				<div class="home-post">
+					<p><img data-attachment-id="484" data-permalink="https://hlullyr.wordpress.com/2017/12/24/the-vicfalls-dream/unadjustednonraw_thumb_1a9b/"
+						    data-orig-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a9b-e1514107005386.jpg?w=740" data-orig-size="1024,586"
+						    data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}"
+						    data-image-title="UNADJUSTEDNONRAW_thumb_1a9b" data-image-description="" data-medium-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a9b-e1514107005386.jpg?w=740?w=300"
+						    data-large-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a9b-e1514107005386.jpg?w=740?w=740"
+						    class="alignnone size-full wp-image-484" src="./The VicFalls Dream – Hlulani_files/unadjustednonraw_thumb_1a9b-e1514107005386.jpg"
+						    alt="UNADJUSTEDNONRAW_thumb_1a9b" srcset="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a9b-e1514107005386.jpg?w=740 740w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a9b-e1514107005386.jpg?w=150 150w, https://hlullyr.files.wordpress.com/2017/12/
+unadjustednonraw_thumb_1a9b-e1514107005386.jpg?w=300 300w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a9b-e1514107005386.jpg?w=768 768w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a9b-e1514107005386.jpg 1024w"
+						    sizes="(max-width: 740px) 100vw, 740px"></p>
+					<div class="post-meta">
+						<i class="icon-file icon-2x"></i>
+							 <span class="posted-on"><time class="entry-date published" datetime="2017-12-21T17:19:14+00:00">December 21, 2017</time>
+							 </span>
+							 <!--<span class="byline"><span class="author vcard"><a class="url fn n" href="https://hlullyr.wordpress.com/author/hlully/">Hlulani</a></span>
+							 </span>-->
+						<span class="tags"><a href="#">Travel</a>, <a href="#">blog</a></span>
+					</div>
+					<article id="post-473" class="post-473 post type-post status-publish format-standard hentry category-uncategorized has-post-thumbnail">
+	<header class="entry-header">
+				<div class="entry-meta">
+		<h5><strong><a href="#">I needed a hug</a></strong></h5>
+	</header>
+
+	<div class="entry-content">
+		<p><strong>Day 3:</strong></p>
+<p><img data-attachment-id="475" data-permalink="https://hlullyr.wordpress.com/2017/12/21/i-needed-a-hug/unadjustednonraw_thumb_1a5d/" data-orig-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a5d.jpg?w=740" data-orig-size="960,640" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="UNADJUSTEDNONRAW_thumb_1a5d" data-image-description="" data-medium-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a5d.jpg?w=740?w=300" data-large-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a5d.jpg?w=740?w=740" class="alignnone size-full wp-image-475" src="./I needed a hug _) – Hlulani_files/unadjustednonraw_thumb_1a5d.jpg" alt="UNADJUSTEDNONRAW_thumb_1a5d" srcset="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a5d.jpg?w=740 740w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a5d.jpg?w=150 150w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a5d.jpg?w=300 300w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a5d.jpg?w=768 768w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a5d.jpg 960w" sizes="(max-width: 740px) 100vw, 740px"></p>
+<p>Having spent all night traveling, as soon as I checked in at the backpackers area, I felt the need to rest my body, I then took what I called a very long nap because when I woke up I felt like it was a bit dark, guilt sort off dealt with me until I checked the time and it was only&nbsp;<span class="aBn"><span class="aQJ">12:00pm</span></span>, phew a sigh of relief, at least I still had some time to go out and check what VicFalls had to offer.</p>
+<p>Can I just mentioned a huge difference from Harare and VicFalls, walking in the streets gave me a sense that I was some kind of tourist who is actually welcomed to interact with the locals, my take on the place was that it’s either you are a tourist or a salesperson ready to offer your services to whoever required them. Ok, I prepared to go out and the first thing I needed to do was have my first meal for the day(well I have always chosen sleep over food whenever they decided to present themselves at the same time). Grabbing fast food from a regular franchise(Chicken inn) in Zimbabwe, I was too careful to actually have every second of my hands’ counts. I generally am not a complicated being, in most cases, my travels aren’t either, my primary objectives are usually 1.talk to people 2. eat good food(I’m such a foodie) and 3. spend time marveling upon nature. <em>Reading novels while at it is also becoming a primary objective.</em></p>
+<p>As soon as I was done eating, off I went to different tour guides, some of them I had approached and some of them approached me, my plan was to go zip lining, which I ended up not doing because the prices were awfully ridiculous, this meant I had to find something that is still along the lines of Zip lining, as I moved around I bumped into another guide who convinced me that they had good deals on activities that it would be worth it for me to check them out, which I eventually did and before you know it I was convinced I’d do Flying Fox with them. Since this would give me a sense of Zip-line.</p>
+<p>The guys came and picked me up so we could go and I fill the forms before take-off(sounds too formal and serious all of a sudden). Well I stuck it in and as soon as I was done we headed to the river, the place looked so beautiful to watch, the other part looked a bit foggy from a distance, and also water was flowing peacefully in the river, on the side when one decided to look up, you’d be treated to a breathtaking mountainous architecture that only God knows what he was thinking when he worked on this place, very pleasant to watch, I don’t know what is it with nature that gives me a sense of belonging, a revival of love, I become so thankful to God, and my faith grows even stronger, because at the back of my mind I always think, “If God is capable of carefully putting this in place like He did, I believe He’s capable of anything”</p>
+<p>But this day ladies and gentlemen was a bit different, I was required to take a turn on how I have always watched this architecture that God has carefully put in place. required to look at the waters from a different view, somewhere on the air relying on cables for me not to fall inside the very water I have always marveled upon, when I looked at how high and tiny the cables was, I became scared and questioned my decision about wanting to do this, there I was with the guide giving instructions that I barely paid attention to, all I was thinking about was “It’s not too late to pull out”, “Is this even worth it? “ well my mind was running fast, I questioned my chances of survival of which he assured me I was safe, I questioned if anyone has ever fallen while up there which he said he couldn’t say, and that again kind of fueled fear even more. Part of me encouraged myself by saying “Hlulani you can do this”, “You are not the kind that easily quits”, “Trust the guide, he’s been doing this for the longest time”, “Imagine how disappointed you will be, should you decide, to walk out of this”, ok while my mind was running as fast I also quickly decided there was no turning back, not when I have come so far.</p>
+<p>I turned to him and asked him to repeat the instructions again, and….I asked for a hug, my reason for this hug was that In case I didn’t make in this, I’d have an afterlife memory of an embrace. And I was ready for taking off, I gave a go ahead and off I flew, and boy it was a blast and a half, I remember looking at the waters down there and giggling out loud, I even spoke to myself out loud and I was like “Woow Hlulani look at you all brave!! I’m super proud of you”, the truth is this was a moment of pride. I still remember how I shouted “I did it” even though I was still up there, the truth is from that point I knew I had already made it, the chanting from the guys made it even worse, let’s call this a moment of pride.</p>
+<p>I turned back to what I called “my home for few days “ with soo much pride and fulfillment. It was so thick I could touch my happiness. I got home and my plan was to have dinner, a traditional dish from the backpacker’s restaurant, try to complete the book I was reading, it was a novel by Paulo Coelho. “Veronica decides to die” which was soo hard to put down, I even took a picture of how my table looked like and sent to a friend, and it was what I called “happiness in one picture”, for some reasons I think the backpackers could pick the energy I had which was pure joy, their playlist was to die for, it would make you miss a date night you’ve never had with an Italian chappie. Unfortunately, all this had to be cut short and I was forced to have an early night because mosquito bites</p>
+<p>On the flipside, I actually drew few lessons out of this, so we look at challenges presented to us every day and they appear to be greater than us that we feel they just finish us, we see them as mountains that are great for us to can climb. Sometimes the Maker does all he can to assure us that He’s right there all step of the way and that He knows we will return unharmed because after all, He’s the one in control of our journey.</p>
+<p>There are some of the journeys that will require me and me alone to take on, no family and friends will be there to take them on with you, and taking it from the Bible, “<em>No temptation has overtaken you except what is common to mankind. And God is faithful; he will not let you be tempted beyond what you can bear. But when you are tempted, he will also provide a way out so that you can endure it</em>.”. And the maker will be there, well…I had the guide in control of my flying, even though I got scared after finding out he was not gonna fly with me….but he was controlling the cables and making sure I have a safe landing, sounds familiar?</p>
+<p><img data-attachment-id="477" data-permalink="https://hlullyr.wordpress.com/2017/12/21/i-needed-a-hug/unadjustednonraw_thumb_1a4e/" data-orig-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a4e.jpg?w=740" data-orig-size="640,352" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="UNADJUSTEDNONRAW_thumb_1a4e" data-image-description="" data-medium-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a4e.jpg?w=740?w=300" data-large-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a4e.jpg?w=740?w=640" class="alignnone size-full wp-image-477" src="./I needed a hug _) – Hlulani_files/unadjustednonraw_thumb_1a4e.jpg" alt="UNADJUSTEDNONRAW_thumb_1a4e" srcset="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a4e.jpg 640w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a4e.jpg?w=150 150w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a4e.jpg?w=300 300w" sizes="(max-width: 640px) 100vw, 640px"></p>
+<p>Day 4 promises to be exciting, meet me there</p>
+<p>“If your mind is in it, you can achieve it” Hlulani</p>
+		<div id="wordads-preview-parent" class="wpcnt">
+			
+</article>
+</div>
+					</div>
+				<div class="span3">
+				<div class="home-post">
+					<p><img data-attachment-id="484" data-permalink="https://hlullyr.wordpress.com/2017/12/24/the-vicfalls-dream/unadjustednonraw_thumb_1a9b/"
+						    data-orig-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a9b-e1514107005386.jpg?w=740" data-orig-size="1024,586"
+						    data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}"
+						    data-image-title="UNADJUSTEDNONRAW_thumb_1a9b" data-image-description="" data-medium-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a9b-e1514107005386.jpg?w=740?w=300"
+						    data-large-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a9b-e1514107005386.jpg?w=740?w=740"
+						    class="alignnone size-full wp-image-484" src="./The VicFalls Dream – Hlulani_files/unadjustednonraw_thumb_1a9b-e1514107005386.jpg"
+						    alt="UNADJUSTEDNONRAW_thumb_1a9b" srcset="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a9b-e1514107005386.jpg?w=740 740w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a9b-e1514107005386.jpg?w=150 150w, https://hlullyr.files.wordpress.com/2017/12/
+unadjustednonraw_thumb_1a9b-e1514107005386.jpg?w=300 300w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a9b-e1514107005386.jpg?w=768 768w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a9b-e1514107005386.jpg 1024w"
+						    sizes="(max-width: 740px) 100vw, 740px"></p>
+					<div class="post-meta">
+						<i class="icon-file icon-2x"></i>
+						<span class="posted-on"><time class="entry-date published updated" datetime="2017-12-20T17:28:44+00:00">December 20, 2017</time></span>
+						<!--<span class="byline"><span class="author vcard"><a class="url fn n" href="https://hlullyr.wordpress.com/author/hlully/">Hlulani</a></span>-->
+						</span>
+						<span class="tags"><a href="#">Travel</a>, <a href="#">blog</a></span>
+					</div>
+	<article id="post-470" class="post-470 post type-post status-publish format-standard hentry category-uncategorized has-post-thumbnail">
+	<header class="entry-header">
+				<div class="entry-meta">
+		<h5><strong><a href="#">Resilience that informs hope</a></strong></h5>
+		</header>
+
+	<div class="entry-content">
+		<p><strong>Day 2:</strong></p>
+<p><img data-attachment-id="471" data-permalink="https://hlullyr.wordpress.com/2017/12/20/resilience-that-informs-hope/unadjustednonraw_thumb_1a27/" data-orig-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a27.jpg?w=740" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="UNADJUSTEDNONRAW_thumb_1a27" data-image-description="" data-medium-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a27.jpg?w=740?w=300" data-large-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a27.jpg?w=740?w=740" class="alignnone size-full wp-image-471" src="./Resilience that informs hope – Hlulani_files/unadjustednonraw_thumb_1a27.jpg" alt="UNADJUSTEDNONRAW_thumb_1a27" srcset="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a27.jpg?w=740 740w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a27.jpg?w=150 150w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a27.jpg?w=300 300w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a27.jpg?w=768 768w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a27.jpg 1024w" sizes="(max-width: 740px) 100vw, 740px">I am a strong believer that our better tomorrow is informed by those small and great efforts we put on every single day, we wake up every day and do what we do best with of course different reasons at the back of our minds. For some, if not most, survival is the primary reason and for others, our everyday acts are informed by the pictures we have in our heads, could be a picture of our better tomorrow or even tomorrow that’s promising for our community and the world at large.</p>
+<p>I woke up on my day 2 in Harare to a WhatsApp text from my friend Tendai Informing me that he had already arrived to pick me up. The plan for the day was that because I had missed my meet and greet with the guys from the co-working space, we would spend a day there, and also have few calls with some of the guys doing some great Tech work in Zimbabwe, it was basically going to be a day filled with activities and of course my mind was ready for it. As soon as I finished preparing myself off we left and first thing first I had to get acquainted with Harare and this meant moving around and even trying out the Zimbabwe dishes, which I successfully did. The sense of being miles away from home kicks in, I am then confronted by unfamiliar everything around. I then have to quickly remind myself why was I doing this, “I have a blank page that is waiting to be filled good African stories…and maybe bad”, the truth is I believe I have a part to play in my own country and continent, well you can call me a public servant who really loves her community and would like to witness a turnaround in her lifetime.On our way before we could catch a minibus, my friend thought it was fitting that we pass by market where a lot of the locals have their small businesses mostly selling African tastes and anything representing the African culture, like any other market it was so busy with vendors going back and forth and customers the doing the same, because I generally take time before visiting markets this was actually a great reminder of how our African brothers everywhere in the world are innovators with a business mind that if were to be harnessed would even go farther.</p>
+<p>As soon as I got to the co-working space where they incubated entrepreneurs, I was confronted by people who are daring to do it, going around and listening to everyone ‘s business stories one couldn’t help but pick up resilience so thick and tangible, my interest was also on how I can also contribute to a great course they are already part of. Before you know it, my day was over, I was to catch a bus that was to take me to Victoria Falls which meant I had to arrive there early to purchase the tickets, which I successfully did, but unfortunately I was not early enough, because the bus was fully booked(Bummer).</p>
+<p>Something needed to be done, we had to find an alternative for me to get to VicFalls, I eventually got a taxi that would take me to Bulawayo to get a bus that leaves at 23:30, the taxi ‘s estimated time was 4 hours from Harare to Bulawayo, I honestly didn’t care about the timelines, what mattered was that I get to VicFalls the following day.</p>
+<p>For some reason I think I have grown so good in discerning great souls, in my taxi ride I sat next to a guy who looked rather interesting, I thought to myself, “He’s probably a designer” and yes I was right, So I met Gilmore Tee and my normal thing to do when I meet interesting individuals is talk to them and history has proven to me that the kind of conversations I have with strangers always creates those fond memories that last for the longest time. We had conversations about both our professionals and it was also so interesting to find out that he’s is a radio presenter at CliffCentral. Our conversations revolved around our lovely continent Africa, travels and we also touched on VicFalls, since this was my next stop, he even ended up promising to give his sister ‘s numbers so I could reach out to her since she stays in VicFalls. I thank God I started that conversation.</p>
+<p>Ok on the other news, we didn’t get to Bulawayo at the anticipated time, instead of anytime before 23:00 so I could catch my bus at 23:30, we got them at around 01:30, yeah I know right? When I got to the bus station, the bus had already left as obviously expected, but security then informed me of the small avansa that was to leave in few minutes, I jumped in and off we left, we made it to VicFalls in the morning.</p>
+<p>And this was the end of my day 2 which was super interesting.</p>
+<p>Meet on day 3 next….</p>
+<p>“If your mind is in it, you can achieve it” Hlulani</p>
+	
+</article>
+					</div>
+					</div>
+
+
+
+				<div class="span3">
+				<div class="home-post">
+					<p><img data-attachment-id="484" data-permalink="https://hlullyr.wordpress.com/2017/12/24/the-vicfalls-dream/unadjustednonraw_thumb_1a9b/"
+						    data-orig-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a9b-e1514107005386.jpg?w=740" data-orig-size="1024,586"
+						    data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}"
+						    data-image-title="UNADJUSTEDNONRAW_thumb_1a9b" data-image-description="" data-medium-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a9b-e1514107005386.jpg?w=740?w=300"
+						    data-large-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a9b-e1514107005386.jpg?w=740?w=740"
+						    class="alignnone size-full wp-image-484" src="./The VicFalls Dream – Hlulani_files/unadjustednonraw_thumb_1a9b-e1514107005386.jpg"
+						    alt="UNADJUSTEDNONRAW_thumb_1a9b" srcset="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a9b-e1514107005386.jpg?w=740 740w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a9b-e1514107005386.jpg?w=150 150w, https://hlullyr.files.wordpress.com/2017/12/
+unadjustednonraw_thumb_1a9b-e1514107005386.jpg?w=300 300w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a9b-e1514107005386.jpg?w=768 768w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_1a9b-e1514107005386.jpg 1024w"
+						    sizes="(max-width: 740px) 100vw, 740px"></p>
+					<div class="post-meta">
+						<i class="icon-file icon-2x"></i>
+						<span class="posted-on"><time class="entry-date published" datetime="2017-12-16T07:10:58+00:00">December 16, 2017</time>
+						<time class="updated" datetime="2017-12-16T07:19:46+00:00">December 16, 2017</time></span>
+						<span class="byline"><span class="author vcard"><a class="url fn n" href="https://hlullyr.wordpress.com/author/hlully/">Hlulani</a></span></span>
+		
+						<span class="tags"><a href="#">Travel</a>, <a href="#">blog</a></span>
+					</div>
+		<article id="post-461" class="post-461 post type-post status-publish format-standard hentry category-uncategorized has-post-thumbnail">
+
+		<header class="entry-header">
+				<div class="entry-meta">
+		
+		<h5><strong><a href="#">#ThePersuitOfTheUnknown</a></strong></h5>
+		</header>
+	<div class="entry-content">
+		<p>&nbsp;</p>
+<p><strong><img data-attachment-id="463" data-permalink="https://hlullyr.wordpress.com/2017/12/16/thepersuitoftheunknown/unadjustednonraw_thumb_ff1/" data-orig-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_ff1.jpg?w=740" data-orig-size="1086,724" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="UNADJUSTEDNONRAW_thumb_ff1" data-image-description="" data-medium-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_ff1.jpg?w=740?w=300" data-large-file="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_ff1.jpg?w=740?w=740" class="alignnone size-full wp-image-463" src="./#ThePersuitOfTheUnknown – Hlulani_files/unadjustednonraw_thumb_ff1.jpg" alt="UNADJUSTEDNONRAW_thumb_ff1" srcset="https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_ff1.jpg?w=740 740w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_ff1.jpg?w=150 150w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_ff1.jpg?w=300 300w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_ff1.jpg?w=768 768w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_ff1.jpg?w=1024 1024w, https://hlullyr.files.wordpress.com/2017/12/unadjustednonraw_thumb_ff1.jpg 1086w" sizes="(max-width: 740px) 100vw, 740px">Let’s call this my Day 1</strong><br>
+It was a Sunday like no other, finally, I was to do that one thing that had remained a seemingly far-fetched dream for the longest time. So far you might have assumed that traveling might be my thing, well you guessed right, I truly love traveling the world and I have watched small travels afford me so much joy I can’t even begin to explain, you can then understand that I was to have a different Sunday filled with a lots of question marks influenced by what was lying ahead of me.</p>
+<p>This was the day I would finally take on a journey I had anticipated for the longest time. My love for Africa had caused me to wish I’d someday find myself walking and sharing stories in some parts of our beloved continent, my imagination had always driven me to a very happy place where stories of hope would be exchanged amongst myself and my fellow Africans.</p>
+<p>My bus was to depart at 21:45 in the evening that very Sunday and of course your thoughts are serving you right, I was finally doing my continental tour which in it had five countries, Zimbabwe, Zambia, Tanzania, Kenya and Ethiopia, and my first stop Zimbabwe, Harare, according to the ticket I would arrive in Harare by 15:25, I cannot even begin to explain the excitement that covered this day, Sunday the 10th, I woke very early or should I say Mom woke up super early and helped iron my clothes(well I know what you’re thinking, please stop right there, I just have a mom who is beyond awesome). I then packed everything I thought I’d need and we were off to church, of which we had a special service on the day, it was a conference themed “Ebenezer”. I don’t plan to get in to much details of what took place at church, but eventually we were out of church and my time to depart was fast approaching, I still remember how I got a call from my mom asking me to be home a bit early and her reason was that we have a prayer of agreement, well on the other hand I had asked my other mother ( well I’m calling her my other mother here just for your understanding, please don’t even ask how it works, or even worse who’s biological) to be the one to drive me to the station where I’d catch the bus, due to the conference she was tired and asked Father to be the one to do it, my drive home was a fast one because time was seemingly welcoming me to what I’d call the anticipated journey, I got home and found my Mom and my other mother (Third Mom, and yes don’t bother asking) they were set to accompany me to the station as soon as the car arrived, I picked few things I thought I’d need for the road and the car was outside. After a short prayer again, and I say again because my Pastor Mom had just made me aware that when she got to the house, my mom and sisters had been praying for my trip, In her word she said ” you must really thank God for a mother like yours, when I got here they had been praying for almost three hours”, we shared hugs with my sisters and my little cousin who was visiting us and my mothers, and off we went.</p>
+<p>I was of course confronted with the feeling of realness that of course was a bit overwhelming, a mixture of “I’m overly excited”, “What’s gonna happen where I’m headed”, ” Finally, finally, finally… dreams do come true” and a whole lot of mixed emotions.</p>
+<p>When we got on the bus I obviously had a different kind of a feeling, I was taking on a long hours journey with people who share their common native language, “Shona”. that was common to everyone into the bus, and I’m sure of this because even the instructions of what would happen as we ride were given in Shona and I’m the only one who raised my hand asking for translation in English. Someone was requested to pray and off we left, I was finally doing this. We drove all night and only got to the border at 05:00, where we got off to get our passports stamped, from the SA side of the border”, The guy from the stamps even made jokes speaking in my language(Xitsonga) surprised I was traveling alone and I was going to Zimbabwe without having family there. Well we laughed together since I didn’t really have the energy to explain myself, besides, I’d just be wasting time for the person behind me, so I let it slip with a giggle.</p>
+<p>When we got to the Zimbabwe side of the border, I was made aware that we would spend hours waiting for the department called “Zimura” to come and search every single bus, taxis and cars making their way to Zim, this meant the 15:25 was not gonna happen, well this alone was not looking good for because a friend of mine Tendai had organized me to meet and greet with few entrepreneurs incubated in a space called B2C in Harare, when the driver realized I was actually shocked with the newly estimated timelines, he suggested he go look for space from a bus that’s already searched and in front, unfortunately all the buses we full and I had to make peace with the timelines, I made Tendai aware but we still hoped I’d make it in time for the meet and greet, which I didn’t, when we got to Harare it was almost half past 7, Tendai was waiting for me with so much warmth and excitement. We then took a walk around Harare ( you can call this my day 1 in Harare), which even though it was at night people were going back and forth to their different destinations, it was a bit chaotic that I even made a comment to my bud, he even explained to me that “Harare ” means a city that never sleeps, this made a lot of sense since a whole lot of people I met looked like they had just had their morning glory and was energized and ready to face the day. We got a taxi and Tendai took me to a place he had organized for me to sleep that night, I was given a warm welcome and this was my first night in Harare…I dozed off before you know it, I obviously was super tired from all the traveling. The only thing I did that night is calling and texting alerting family and friends that I made it safe…I took a bath and slept, more like dose off.</p>
+<p>Day 1 was now over, meet me on day 2</p>
+<p>“If your mind is in it, you can achieve it”. Hlulani</p>
+
+</article>
+					</div>
+					</div>
+				</div>
+				<div class="blankdivider30"></div>
+				<div class="aligncenter">
+					<a href="#" class="btn btn-large btn-theme">More blog post</a>
+				</div>
+			</div>
+	</section>
+
+	<!-- end spacer section -->
+	<!-- section: contact -->
+	<section id="contact" class="section green">
+		<div class="container">
+			<h4>Get in Touch</h4>
+			<p>
+				Let's make something awesome together.
+
+			</p>
+			<div class="blankdivider30">
+			</div>
+			<div class="row">
+				<div class="span12">
+					<div class="cform" id="contact-form">
+						<div id="sendmessage">Your message has been sent. Thank you!</div>
+						<div id="errormessage"></div>
+						<form action="" method="post" role="form" class="contactForm">
+							<div class="row">
+								<div class="span6">
+									<div class="field your-name form-group">
+										<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars"
+										/>
+										<div class="validation"></div>
+									</div>
+									<div class="field your-email form-group">
+										<input type="text" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email"
+										/>
+										<div class="validation"></div>
+									</div>
+									<div class="field subject form-group">
+										<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject"
+										/>
+										<div class="validation"></div>
+									</div>
+								</div>
+								<div class="span6">
+									<div class="field message form-group">
+										<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+										<div class="validation"></div>
+									</div>
+									<input type="submit" value="Send message" class="btn btn-theme pull-left">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!-- ./span12 -->
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="span6 offset3">
+					<ul class="social-networks">
+						<li><a href="https://www.instagram.com/i_am_hlulani/"><i class="icon-circled icon-bgdark icon-instagram icon-2x"></i></a></li>
+						<li><a href="https://twitter.com/HlullyR"><i class="icon-circled icon-bgdark icon-twitter icon-2x"></i></a></li>
+						<li><a href="https://www.facebook.com/hlulani.ruth"><i class="icon-circled icon-bgdark icon-facebook icon-2x"></i></a></li>
+					</ul>
+					<p class="copyright">
+						&Hlulani. All rights reserved.
+						<div class="credits">
+
+						</div>
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	<a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bgdark icon-2x"></i></a>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.scrollTo.js"></script>
+	<script src="js/jquery.nav.js"></script>
+	<script src="js/jquery.localScroll.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/jquery.prettyPhoto.js"></script>
+	<script src="js/isotope.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script src="js/inview.js"></script>
+	<script src="js/animate.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="contactform/contactform.js"></script>
+
+</body>
+
+</html>
