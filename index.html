@@ -12,105 +12,86 @@
 	<link href="color/default.css" rel="stylesheet">
 	<link rel="shortcut icon" href="img/favicon.ico">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
 	<style>
 		.home-post {
-			background: #fff;
-			max-height: 600px;
-			margin-bottom: 30px;
-			overflow: hidden;
-			padding-bottom: 50px;
-			display: inline-block;
-			vertical-align: top;
-			max-width: 300px;
-			margin: 20px;
-		}
+	background:#fff;
+	max-height: 600px;
+    margin-bottom: 30px;
+    overflow: hidden;
+	padding-bottom: 50px;	
+}
+.post-holder {
+	min-height: 100px;
+	background-color:white;
+	margin: 10px;
+	color: black
+	
 
-		.post-holder {
-			min-height: 100px;
-			background-color: blue;
-			margin: 10px;
-			color: white
-		}
-
-		.read-more {
-			background-color: #00aced;
-			padding: 6px;
-			bottom: 0;
-			display: inline-block;
-			color: #FFF;
-			position: absolute;
-			margin: 16px;
-			border-radius: 6px;
-			cursor: pointer;
-		}
+}
+.read-more {
+	background-color: #00aced;
+	padding: 6px;
+	bottom: 0;
+	display: inline-block;
+	color: #FFF;
+	position: absolute;
+	margin:16px;
+	border-radius: 6px;
+	cursor: pointer;
+}
 	</style>
 
 	<script>
-		$(document).ready(function () {
+		$(document).ready(function(){
+			var posts;
 			$(".home-post").append('<div class="read-more">Read More</div>');
-
-			$(document).on("click", ".read-more", function () {
+			
+			$(document).on("click", ".read-more", function(){
 				$(this).parent(".home-post").css("max-height", "none");
 			});
 
-			//get the template via http
-			$.get("https://public-api.wordpress.com/rest/v1.1/sites/hlullyr.wordpress.com/posts?number=3", function (resp) {
-				//init Handlebars
-				buildBlog(resp.posts);
-			});
-
-			function buildBlog(posts) {
-				$.get("/includes/blogpost.html", function (resp) {
-					//init Handlebars
-					var templateScript = Handlebars.compile(resp);
-
-					//posts is from the script above, "/includes/blogpost.js"
-					for (i = 0; i < posts.length; i++) {
-						//send data at index and load that data into the template.
-						$(".blog-holder").append(templateScript(posts[i]));
-					}
-				});
+			$.get('https://public-api.wordpress.com/rest/v1.1/sites/hlullyr.wordpress.com/posts?number=3',function(res){
+				console.log(res);
+				posts = res.posts;
+			for(i=0;i<3;i++){
+				//template
+				var template = "<div class='row margin-top-m'><div>"+posts[i].title+" "+posts[i].modified+" "+posts[i].author.name+"</div><div>" + posts[i].attachments + "" + posts[i].excerpt + "</div></div>";
+				$(".col-md-4").append(template);
 			}
+			}, 'json');
+
+			// var posts	= [{
+			// 	name:"Post 1",
+			// },{
+			// 	name:"Post 2",
+			// },{
+			// 	name:"Post 3",
+			// }];
 
 		});
+		
 	</script>
 </head>
 
 <body>
-	amazon
+
 	<!-- navbar -->
 	<div class="navbar-wrapper">
 		<div class="navbar navbar-inverse navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container">
 					<!-- Responsive navbar -->
-					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</a>
-					<h1 class="brand">
-						<a href="index.html">HLULANI</a>
-					</h1>
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+				</a>
+					<h1 class="brand"><a href="index.html">HLULANI</a></h1>
 					<!-- navigation -->
 					<nav class="pull-right nav-collapse collapse">
 						<ul id="menu-main" class="nav">
-							<li>
-								<a title="team" href="#about">About</a>
-							</li>
-							<li>
-								<a title="services" href="#services">Services</a>
-							</li>
-							<li>
-								<a title="works" href="#works">Projects</a>
-							</li>
-							<li>
-								<a title="blog" href="#blog">Blog</a>
-							</li>
-							<li>
-								<a title="contact" href="#contact">Contact</a>
-							</li>
+							<li><a title="team" href="#about">About</a></li>
+							<li><a title="services" href="#services">Services</a></li>
+							<li><a title="works" href="#works">Projects</a></li>
+							<li><a title="blog" href="#blog">Blog</a></li>
+							<li><a title="contact" href="#contact">Contact</a></li>
 							<!--<li><a href="page.html">Travel</a></li>-->
 
 						</ul>
@@ -121,7 +102,7 @@
 	</div>
 	<!-- Header area -->
 	<div id="header-wrapper" class="header-slider" style="position:relative">
-		<span style="background-color:rgba(0,0,0,.4); position:absolute; top:0;bottom:0;left:0;right:0;z-index:1"></span>
+				<span style="background-color:rgba(0,0,0,.4); position:absolute; top:0;bottom:0;left:0;right:0;z-index:1"></span>
 		<header class="clearfix">
 			<div class="logo">
 				<img src="img/logo-1.png" alt="" />
@@ -138,14 +119,12 @@
 								</li>
 								<li>
 									<p class="home-slide-content">
-										Eat and drink
-										<strong>Code</strong>
+										Eat and drink <strong>Code</strong>
 									</p>
 								</li>
 								<li>
 									<p class="home-slide-content">
-										Get
-										<strong>Inspired</strong>
+										Get <strong>Inspired</strong>
 									</p>
 								</li>
 							</ul>
@@ -162,8 +141,7 @@
 			<div class="row">
 				<div class="span6 alignright flyLeft">
 					<blockquote class="large">
-						When a person really desires something, all the universe conspires to help that person to realize his dream.
-						<cite>Paulo Coelho</cite>
+						When a person really desires something, all the universe conspires to help that person to realize his dream.<cite>Paulo Coelho</cite>
 					</blockquote>
 				</div>
 				<div class="span6 aligncenter flyRight">
@@ -175,46 +153,44 @@
 	<!-- end spacer section -->
 	<!-- section: team -->
 	<section id="about" class="section">
+		
+			<h4>Who I am</h4>
+			<div class="row">
+				<div class="span4 offset1">
+					<div>
+						<h2>I live with <strong>Tomorrow 's picture</strong></h2>
+						<p>
+							I’m am Hlulani Baloyi, 25 years old born in Limpopo. I work as a Digital Specialist at a consulting firm In my final year
+							I joined Geekulcha, where I got to work with web and mobile application, in the process I developed my love for mobile
+							applications, specifically android Geekulcha introduced me to attending more Tech events which in the process I got
+							to realize that there is a serious gap between males and females in the industry. I realized that girls/women are
+							sitting back which made me want to do something about this. So I started searching more of sites that speaks empowerment
+							for women in the ICT sector, in the process I ran into Girl Rising site amongst other many sites, they encourage Girls
+							education in general so I applied to be an ambassador for SA, which they appointed me. Girl Rising partners with Intel
+							so when Intel found out about my appointment they got me to work closely with them with a focus on introducing girls
+							to the ICT sector, where I get to run tutoring sessions as an intro to coding I also co-run meetups with girls who
+							are already in the ICT sector (We call ourselves Raeketsetsa which means Doing it for ourselves) so we can build and
+							share information as we build our portfolios in the industry, Under the Girl Rising umbrella, I also get to host career
+							expos for high school students. Girl Rising Career Expo is an outreach program targeted at young people (High schools
+							learners and the unemployed) from disadvantaged backgrounds found in South Africa’s townships. The program seeks to
+							open opportunities for young people currently unemployed and those feeling uninspired in their educational pursuits.
+							In reaching out to these youth, the outreach effort borrows from the African culture of storytelling while sharing
+							information. The project envisages a central point where current industry leaders can share the stories of their journeys
+							to success with the youth. Through this process it is hoped we can achieve a shift in mindset so these young people
+							can realize their current circumstances are just a temporary situation they can change through choice. As history
+							has clearly shown, teaching a person to fish without giving them a fishing rod aids them in no way. The Girl Rising
+							Career Expos are usually held in Atteridgeville, Pretoria I got to be featured in a number of articles including Htxt.women,
+							Tech Girl, Sunday Times, Intel IQ site, Digify Africa and Rekord amongst others. My major achievement was to score
+							a job at IBM after being headhunted.
 
-		<h4>Who I am</h4>
-		<div class="row">
-			<div class="span4 offset1">
-				<div>
-					<h2>I live with
-						<strong>Tomorrow 's picture</strong>
-					</h2>
-					<p>
-						I’m am Hlulani Baloyi, 25 years old born in Limpopo. I work as a Digital Specialist at a consulting firm In my final year
-						I joined Geekulcha, where I got to work with web and mobile application, in the process I developed my love for mobile
-						applications, specifically android Geekulcha introduced me to attending more Tech events which in the process I got
-						to realize that there is a serious gap between males and females in the industry. I realized that girls/women are sitting
-						back which made me want to do something about this. So I started searching more of sites that speaks empowerment for
-						women in the ICT sector, in the process I ran into Girl Rising site amongst other many sites, they encourage Girls
-						education in general so I applied to be an ambassador for SA, which they appointed me. Girl Rising partners with Intel
-						so when Intel found out about my appointment they got me to work closely with them with a focus on introducing girls
-						to the ICT sector, where I get to run tutoring sessions as an intro to coding I also co-run meetups with girls who
-						are already in the ICT sector (We call ourselves Raeketsetsa which means Doing it for ourselves) so we can build and
-						share information as we build our portfolios in the industry, Under the Girl Rising umbrella, I also get to host career
-						expos for high school students. Girl Rising Career Expo is an outreach program targeted at young people (High schools
-						learners and the unemployed) from disadvantaged backgrounds found in South Africa’s townships. The program seeks to
-						open opportunities for young people currently unemployed and those feeling uninspired in their educational pursuits.
-						In reaching out to these youth, the outreach effort borrows from the African culture of storytelling while sharing
-						information. The project envisages a central point where current industry leaders can share the stories of their journeys
-						to success with the youth. Through this process it is hoped we can achieve a shift in mindset so these young people
-						can realize their current circumstances are just a temporary situation they can change through choice. As history has
-						clearly shown, teaching a person to fish without giving them a fishing rod aids them in no way. The Girl Rising Career
-						Expos are usually held in Atteridgeville, Pretoria I got to be featured in a number of articles including Htxt.women,
-						Tech Girl, Sunday Times, Intel IQ site, Digify Africa and Rekord amongst others. My major achievement was to score
-						a job at IBM after being headhunted.
-
+					</div>
+				</div>
+				<div class="span6">
+					<div class="aligncenter">
+						<img src="img/icons/hlulani.jpg" alt="" />
+					</div>
 				</div>
 			</div>
-			<div class="span6">
-				<div class="aligncenter">
-					<img src="img/icons/hlulani.jpg" alt="" />
-				</div>
-			</div>
-		</div>
 	</section>
 	<!-- end section: team -->
 	<!-- section: services -->
@@ -227,14 +203,10 @@
 					<div class="service-box">
 						<img src="img/icons/laptop.png" alt="" />
 						<h2>Mobile development</h2>
-						<p>App development for
-							<br>
-							<p>- Native android
-								<br>
-								<p>- Hybrid android
-									<br>
-									<p>- Hybrid IOS
-										<br>
+						<p>App development for<br>
+							<p>- Native android<br>
+								<p>- Hybrid android<br>
+									<p>- Hybrid IOS<br>
 
 					</div>
 				</div>
@@ -242,12 +214,9 @@
 					<div class="service-box">
 						<img src="img/icons/lab.png" alt="" />
 						<h2>Web development</h2>
-						<p>- I also do Web development
-							<br>
-							<p>- Responsive web apps
-								<br>
-								<p>- Contact for more info
-									<br>
+						<p>- I also do Web development<br>
+							<p>- Responsive web apps<br>
+								<p>- Contact for more info<br>
 					</div>
 				</div>
 				<div class="span3 animated-fast flyIn">
@@ -276,7 +245,7 @@
 	<!-- section: works -->
 	<section id="works" class="section">
 		<div class="container clearfix">
-
+			
 
 			<div class="toggle toggle-grey">
 
@@ -285,30 +254,15 @@
 				<div class="toggle_container" style="display: block;">
 					Below are some of Hlulani 's big achievements:
 					<p></p>
-					<p>– In 2014,
-						<strong> She </strong> Became a Girl Rising ambassodor
-						<br>
-						<p>– In 2014,
-							<strong> Intel </strong> featured her on their "IQ by Intel site" under the She will connect category, which can be found on
-							youtube
-							<br> – She got featured
-							<strong> several times </strong>on the Htxt site
-							<br> – In 2014
-							<strong> Techgirl.com </strong>featured her as one of the inspirational tech girls</p>
-						<p>– She was also featured
-							<strong> by Sowetan </strong>.
-							<br>
-							<p>– In 2016 was featured
-								<strong> on Digify Africa site </strong>.
-								<br> – In 2015, Girls Invent tomorrow
-								<strong> profiled her on their site </strong>.
-								<br> – In 2016
-								<strong>Rekord Newspaper </strong> featured her as an ICT boffin inspiring young people
-								<br> – In 2016, she was ranked as
-								<strong> part of the 60 women changing the narrative inthe tech space</strong> in an annual awards and ranking scheme for
-								young South African Achievers between 15-40 years.
-								<br> – In 2017, she was hosted and later featured
-								<strong> StartupGrind Pretoria </strong>
+					<p>– In 2014, <strong> She </strong> Became a Girl Rising ambassodor<br>
+						<p>– In 2014, <strong> Intel </strong> featured her on their "IQ by Intel site" under the She will connect category, which
+							can be found on youtube<br> – She got featured <strong> several times </strong>on the Htxt site<br> – In 2014 <strong> Techgirl.com </strong>featured
+							her as one of the inspirational tech girls</p>
+						<p>– She was also featured <strong> by Sowetan </strong>.<br>
+							<p>– In 2016 was featured<strong> on Digify Africa site </strong>.<br> – In 2015, Girls Invent tomorrow <strong> profiled her on their site </strong>.<br>								– In 2016 <strong>Rekord Newspaper </strong> featured her as an ICT boffin inspiring young people<br> – In 2016,
+								she was ranked as <strong> part of the 60 women changing the narrative inthe tech space</strong> in an annual awards
+								and ranking scheme for young South African Achievers between 15-40 years.<br> – In 2017, she was hosted and later
+								featured <strong> StartupGrind Pretoria </strong>
 
 				</div>
 			</div>
@@ -332,9 +286,25 @@
 	</section>
 	<!-- end spacer section -->
 	<!-- section: blog -->
-	<section id="blog" class="section">
-		<div class="container blog-holder">
+	<section id="blog" class="section ">
+		<div class="container">
 			<h4>My Blog</h4>
+			<div class="row">
+			<div class="col-md-4"
+		
+			</div>
+			</div>
+		<!--<div class="row">
+		<!--<div class=" col-md-4">-->
+
+		<!--</div>-->
+		
+				<!--<div class="container blog-holder col-md-4">
+			<h4>My Blog</h4>-->
+
+		
+		</div>
+	
 	</section>
 
 	<!-- end spacer section -->
@@ -392,21 +362,9 @@
 			<div class="row">
 				<div class="span6 offset3">
 					<ul class="social-networks">
-						<li>
-							<a href="https://www.instagram.com/i_am_hlulani/">
-								<i class="icon-circled icon-bgdark icon-instagram icon-2x"></i>
-							</a>
-						</li>
-						<li>
-							<a href="https://twitter.com/HlullyR">
-								<i class="icon-circled icon-bgdark icon-twitter icon-2x"></i>
-							</a>
-						</li>
-						<li>
-							<a href="https://www.facebook.com/hlulani.ruth">
-								<i class="icon-circled icon-bgdark icon-facebook icon-2x"></i>
-							</a>
-						</li>
+						<li><a href="https://www.instagram.com/i_am_hlulani/"><i class="icon-circled icon-bgdark icon-instagram icon-2x"></i></a></li>
+						<li><a href="https://twitter.com/HlullyR"><i class="icon-circled icon-bgdark icon-twitter icon-2x"></i></a></li>
+						<li><a href="https://www.facebook.com/hlulani.ruth"><i class="icon-circled icon-bgdark icon-facebook icon-2x"></i></a></li>
 					</ul>
 					<p class="copyright">
 						&Hlulani. All rights reserved.
@@ -419,9 +377,7 @@
 		</div>
 
 	</footer>
-	<a href="#" class="scrollup">
-		<i class="icon-angle-up icon-square icon-bgdark icon-2x"></i>
-	</a>
+	<a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bgdark icon-2x"></i></a>
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.scrollTo.js"></script>
 	<script src="js/jquery.nav.js"></script>
