@@ -1,12 +1,4 @@
 /*
-    Theme Name: Maxim
-    Theme URL: https://bootstrapmade.com/maxim-free-onepage-bootstrap-theme/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-*/
-
-
-/*
 ===========================
 CONTENTS:
 
@@ -1931,5 +1923,32 @@ i.icon-white {
     }
     #contact-form input[type=submit] {
         width: 100%;
+    }
+    .home-post {
+        background: #fff;
+        max-height: 600px;
+        margin-bottom: 30px;
+        overflow: hidden;
+        padding-bottom: 50px;
+    }
+    .post-holder {
+        min-height: 100px;
+        background-color: white;
+        margin: 10px;
+        color: black
+    }
+    .read-more {
+        background-color: #00aced;
+        padding: 6px;
+        bottom: 0;
+        display: inline-block;
+        color: #FFF;
+        position: absolute;
+        margin: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    .acheive {
+        text-align: left;
     }
 }
