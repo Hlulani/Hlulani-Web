@@ -6,12 +6,58 @@
     <meta charset="utf-8">
     <title>Hlulani 's Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Hlulani Baloyi is a Digital analyst(Full stack developer),working for a consulting firm.">
+    <meta name="author" content="Hlulani Baloyi">
+    <meta name="keyword" content="Hlulani Baloyi">
+    <meta name="keyword" content="Ruth Baloyi">
+    <meta name="keyword" content="Hlulani Ruth">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="color/default.css" rel="stylesheet">
+
     <link rel="shortcut icon" href="img/favicon.ico">
+
+    <meta property="og:site_name" content="Hlulani 's Website" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Hlulani 's Website" />
+    <meta property="og:description" content="Hlulani Baloyi is a Digital analyst(Full stack developer),working for a consulting firm." />
+    <meta property="og:url" content="http://hlulani.africa.com/" />
+    <meta property="og:image" content="img/icons/hlulani.jpg" />
+    <meta property="article:publisher" content="https://twitter.com/HlullyR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Hlulani 's Thoughts" />
+    <meta name="twitter:description" content="Hlulani Baloyi who joined Geekulcha and soon realized that there is a gap between males and females in the ICT sector. She started doing research and came across Girl Rising. She is now the ambassador for this global initiative and helps teach women how
+                        to code and helps tackle the gender gap." />
+    <meta name="twitter:url" content="http://hlulani.africa.com/" />
+    <meta name="twitter:image" content="img/icons/hlulani.jpg" />
+    <meta name="twitter:site" content="@Hlullyr" />
+    <meta property="og:image:width" content="720" />
+    <meta property="og:image:height" content="339" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Website",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Hlulani Thoughts",
+        "logo": "img/icons/hlulani.jpg"
+    },
+    "url": "http://hlulani.africa.com/",
+    "image": {
+        "@type": "ImageObject",
+        "url": "img/icons/hlulani.jpg",
+        "width": 720,
+        "height": 339
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "img/icons/hlulani.jpg"
+    },
+    "description": "Hlulani Baloyi is a Digital analyst(Full stack developer),working for a consulting firm."
+}
+    </script>
+
     <style>
         .home-post {
             background: #fff;
@@ -44,40 +90,6 @@
             text-align: left;
         }
     </style>
-
-    <!--<script>
-		$(document).ready(function () {
-			var posts;
-			$(".home-post").append('<div class="read-more">Read More</div>');
-
-			$(document).on("click", ".read-more", function () {
-				$(this).parent(".home-post").css("max-height", "none");
-			});
-
-			$.get('https://public-api.wordpress.com/rest/v1.1/sites/hlullyr.wordpress.com/posts?number=3', function (res) {
-				console.log(res);
-				posts = res.posts;
-				for (i = 0; i < 3; i++) {
-					//template
-					str = JSON.stringify(posts[i].attachments);
-					console.log("LOG :: " + str);
-					var template = "<div class='row margin-top-m'><div>" + posts[i].title + " " + posts[i].modified + " " + posts[
-						i].author.name + "</div><div>" + posts[i].excerpt + "</div></div>";
-					$(".col-md-4").append(template);
-				}
-			}, 'json');
-
-			// var posts	= [{
-			// 	name:"Post 1",
-			// },{
-			// 	name:"Post 2",
-			// },{
-			// 	name:"Post 3",
-			// }];
-
-		});
-	</script>-->
-
 </head>
 
 <body>
@@ -94,7 +106,7 @@
                         <span class="icon-bar"></span>
                     </a>
                     <h1 class="brand">
-                        <a href="index.html">HLULANI</a>
+                        <a href="index.php">HLULANI</a>
                     </h1>
                     <!-- navigation -->
                     <nav class="pull-right nav-collapse collapse">
@@ -114,8 +126,6 @@
                             <li>
                                 <a title="contact" href="#contact">Contact</a>
                             </li>
-                            <!--<li><a href="page.html">Travel</a></li>-->
-
                         </ul>
                     </nav>
                 </div>
@@ -197,7 +207,6 @@
                         to code and helps tackle the gender gap.
                     </p>
                     <p>
-
                         Under the same umbrella she then co-founded an women in Tech organization called Raeketsetsa(we are doing it ourselves) which focuses on sustaining young women who are already in the tech-space. In 2014 she became an Intel ambassador for their #SheWillConnect
                         initiative which is designed to help women allover becoming computer literate.
                     </p>
@@ -205,7 +214,7 @@
             </div>
             <div class="span6">
                 <div class="aligncenter">
-                    <img src="img/icons/hlulani.jpg" alt="" />
+                    <img src="img/icons/web4.png" alt="" />
                 </div>
             </div>
         </div>
@@ -219,7 +228,7 @@
             <div class="row">
                 <div class="span3 animated-fast flyIn">
                     <div class="service-box">
-                        <img src="img/mobile.png" alt="" />
+                        <img src="img/web.png"  alt="" />
                         <h2>Mobile development</h2>
                         <p>App development for
                             <br>
@@ -246,7 +255,7 @@
                 </div>
                 <div class="span3 animated-fast flyIn">
                     <div class="service-box">
-                        <img src="img/career.png" alt="" />
+                        <img src="img/web.png"  alt="" />
                         <h2>Career Expo events</h2>
                         <p>
                             - Career exposure for high scholars
@@ -256,7 +265,7 @@
                 </div>
                 <div class="span3 animated-slow flyIn">
                     <div class="service-box">
-                        <img src="img/motivation.png" alt="" />
+                        <img src="img/web.png"  alt="" />
                         <h2>Motivational speaking</h2>
                         <p>
                             I also provide Motivational speaking
@@ -270,11 +279,7 @@
     <!-- section: works -->
     <section id="works" class="section">
         <div class="container clearfix">
-
-
             <div class="toggle toggle-grey acheive">
-
-                <!--<h4 class="trigger active"><span class="t_ico"></span><a href="#">ACHIEVEMENTS</a></h4>-->
                 <h4>Achievements</h4>
                 <div class="toggle_container" style="display: block;">
                     Below are some of Hlulani 's big achievements:
@@ -345,12 +350,44 @@
             <div class="row">
                 <div class="span12">
                     <div class="cform" id="contact-form">
-                        <!--<div class="sendmessage">Your message has been sent. Thank you!</div>-->
-                        <div class="alert alert-success">
-                            <strong>Thank you!</strong> Your email is well received, I will get back at yah!!
-                        </div>
                         <div id="errormessage"></div>
-                        <form action="https://us-central1-hlulani-server.cloudfunctions.net/contacts_add" method="post" role="form" class="contactForm">
+                        <?php
+                        if(!empty($_POST['submit']) && !empty($_GET['a']) && !empty($_GET['c']) && $_GET['a']=='apply' && $_GET['c']=='submit' && isset($_POST['submit'])) {
+
+                        $name = $_POST['name'];
+                        $email = $_POST['email'];
+                        $subjet = $_POST['subject'];
+                        $message = $_POST['message'];
+
+
+                        define(
+                        'EMAIL_MATCHER',
+                        '/^[^@\s]+\@(\[?)([-\w]+\.)+([a-zA-Z]{2,6}|[0-9]{1,3})(\]?)$/'
+                        );
+                        if(!preg_match(EMAIL_MATCHER,$email))
+                        {
+                        echo "Your email address does not appear valid.";
+                        exit;
+                        }
+                        else {
+                        $mail_from = $email;
+                        $mail_to = 'hlullyr@gmail.com'; 
+                        $subjet = 'Getting in touch with Hlulani';
+                        $message = 'Hello,\n\n'.$name.'('.$subjet.', '.$message.') has applied for a new GKSS Chapter with details';
+
+                        //Send email to Hlulani
+                        $headers = "From: $mail_from";
+                        mail($mail_to,$subjet,$message,$headers);
+
+                        echo 
+                        '<div id="successmessage" class="alert alert-success"> "Thank you! Your email is well received, I will get back at yah!!";</div>';
+                        }
+                        }
+
+                        else {
+                        ?>
+
+                        <form  method="post" action="?a=apply&c=submit" role="form " id="contact " class="contactForm ">
                             <div class="row">
                                 <div class="span6">
                                     <div class="field your-name form-group">
@@ -371,13 +408,15 @@
                                         <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                                         <div class="validation"></div>
                                     </div>
-                                    <input type="submit" value="Send message" class="btn btn-theme pull-left">
+                                    <input type="submit" value="Send message" name="submit" class="btn btn-theme pull-left">
                                 </div>
                             </div>
                         </form>
+
+                        <?php } ?>
+
                     </div>
                 </div>
-                <!-- ./span12 -->
             </div>
         </div>
     </section>
@@ -435,7 +474,7 @@
                 $(this).parent(".home-post").css("max-height", "none");
             });
 
-            $.get("https://public-api.wordpress.com/rest/v1.1/sites/hlullyr.wordpress.com/posts?number=4", function(resp) {
+            $.get("https://public-api.wordpress.com/rest/v1.1/sites/hlullyr.wordpress.com/posts?number=10", function(resp) {
 
                 for (i = 0; i < resp.posts.length; i++) {
                     var htmlTemplate = `<div class="span3">
@@ -468,28 +507,6 @@ ${resp.posts[i].excerpt}
 
         });
     </script>
-    <!--<script>
-        $(function() {
-            /*  Submit form using Ajax */
-            $('button[type=submit]').click(function(e) {
-
-                $.ajax({
-                    type: "POST",
-                    url: "http://localhost:3000/contacts/add",
-                    cache: false,
-                    contentType: "application/json; charset=utf-8",
-                    data: "{ 'body':'" +
-                        name + "'," + "'to': '" + email + "'," + "'from': '" + message + "'," + "'subject': " + subject + "'" + "}",
-                    dataType: "JSON.stringify(formData)",
-                    complete: function(contact) {
-                        if (contact.status == 200) $('#formcontainer').html('Success');
-                        else alert('Please try again later ');
-                    }
-                });
-            });
-        });
-    </script>-->
-
 </body>
 
 </html>
