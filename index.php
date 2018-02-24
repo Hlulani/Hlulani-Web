@@ -332,8 +332,9 @@
     <section id="blog" class="section ">
         <div class="container">
             <h4>My Blog</h4>
-            <div class="blog-entries"></div>
-        </div>
+            <div class="blog-entries row"></div>
+            <div class="pagination"></div>
+            </div>
     </section>
 
     <!-- end spacer section -->
@@ -468,44 +469,60 @@
     <script src="js/custom.js"></script>
     <script src="contactform/contactform.js"></script>
     <script>
-        $(document).ready(function() {
+      function renderPosts(resp){
+        $(".blog-entries").html('');
+        for (i = 0; i < resp.posts.length; i++) {
+          var htmlTemplate = `<div class="span3">
+              <div class="home-post">
+                  <p><img class="alignnone size-full wp-image-484" src="${resp.posts[i].featured_image || 'img/blog/img1.jpg'}" alt="${resp.posts[i].title}"></p>
+                  <div class="post-meta">
+                      <i class="icon-file icon-2x"></i>
+                      <span class="posted-on"><time  id="datetime" type="datetime-local" class="entry-date published" datetime="${resp.posts[i].date}"></time><time class="updated" datetime="${resp.posts[i].date}">${resp.posts[i].date}</time></span>
+                      <!-- <span class="tags"><a href="#">Travel</a>, <a href="#">blog</a></span> -->
+                  </div>
+                  <article id="post-481" class="post-481 post type-post status-publish format-standard entry category-uncategorized has-post-thumbnail">
+                      <header class="entry-header">
+                          <div class="entry-meta">
+                              <div class="entry-content">
+                                  <h5><strong><a href="./blog.html#${resp.posts[i].ID}">${resp.posts[i].title}</a></strong></h5>
+                                  ${resp.posts[i].excerpt}
+                              </div>
+                              <button type="button" class="btn btn-link entry-content btn-link-color">
+                              <a href="./blog.html#${resp.posts[i].ID}">Read more:</a></button>
+                          </div>
+                      </header>
+                  </article>
+              </div>
+          </div>`;
+          $(".blog-entries").append(htmlTemplate);
+        }
+      }
 
-            $(document).on("click", ".read-more", function() {
-                $(this).parent(".home-post").css("max-height", "none");
-            });
-
-            $.get("https://public-api.wordpress.com/rest/v1.1/sites/hlullyr.wordpress.com/posts?number=10", function(resp) {
-
-                for (i = 0; i < resp.posts.length; i++) {
-                    var htmlTemplate = `<div class="span3">
-    <div class="home-post">
-        <p><img class="alignnone size-full wp-image-484" src="${resp.posts[i].featured_image || 'img/blog/img1.jpg'}" alt="UNADJUSTEDNONRAW_thumb_1a9b"></p>
-        <div class="post-meta">
-            <i class="icon-file icon-2x"></i>
-<span class="posted-on"><time  id="datetime" type="datetime-local" class="entry-date published" datetime="${resp.posts[i].date}"></time><time class="updated" datetime="${resp.posts[i].date}">${resp.posts[i].date}</time></span>
-            <!-- <span class="tags"><a href="#">Travel</a>, <a href="#">blog</a></span> -->
-        </div>
-        <article id="post-481" class="post-481 post type-post status-publish format-standard hentry category-uncategorized has-post-thumbnail">
-            <header class="entry-header">
-                <div class="entry-meta">
-                    <div class="entry-content">
-                        <h5><strong><a href="./blog.html#${resp.posts[i].ID}">${resp.posts[i].title}</a></strong></h5>
-${resp.posts[i].excerpt}
-
-</div>
-<button type="button" class="btn btn-link entry-content btn-link-color">
-	<a href="./blog.html#${resp.posts[i].ID}">Read more:</button>
-                </div>
-            </header>
-        </article>
-    </div>
-</div>`;
-                    $(".blog-entries").append(htmlTemplate);
-                };
-            });
-
-
+      function fetchPosts(offset){
+        var offset = offset || 0;
+        $.get("https://public-api.wordpress.com/rest/v1.1/sites/hlullyr.wordpress.com/posts?number=4&offset=" + offset, function(resp) {
+          renderPosts(resp);
+          setPagination(offset, resp.found);
         });
+      }
+      
+      function setPagination(offset, totalCount){
+        var total = Math.round(totalCount / 4);
+        var items = '<li><a href="javascript:fetchPosts(0);">1</a></li>';
+        for(var i=1; i<total; i++){
+          items += `<li><a href="javascript:fetchPosts(${i*4});">${i+1}</a></li>`;
+        }
+        var paginationTemplate = `<ul>${items}</ul>`;
+        $(".pagination").html('');
+        $(".pagination").append(paginationTemplate);
+      }
+
+      $(document).ready(function() {
+        $(document).on("click", ".read-more", function() {
+            $(this).parent(".home-post").css("max-height", "none");
+        });
+        fetchPosts(0);
+      });
     </script>
 </body>
 
